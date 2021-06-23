@@ -53,4 +53,9 @@ super + g
 # preselect the direction
 super + ctrl + {h,j,k,l}
   bspc node -p {west,south,north,east}
-
+# launch log out
+ctrl + shift + l
+  ~/.config/polybar/forest/scripts/powermenu.sh
+# application menu
+super + space
+  ~/.config/polybar/forest/scripts/launcher.sh

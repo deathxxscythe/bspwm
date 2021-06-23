@@ -29,5 +29,4 @@ nitrogen --restore
 xsetroot -cursor_name left_ptr
 albert &
 
-bspc rule -a albert border=off
 
