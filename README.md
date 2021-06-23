@@ -16,5 +16,4 @@ This is a work in progress and will be updated often.
 - Compton
 - Neo Vim
 - Ranger
-- Albert
 
