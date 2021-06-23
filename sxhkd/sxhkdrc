@@ -1,0 +1,56 @@
+# To spawn the terminal
+super + Return
+  alacritty
+# make sxhkd reload its configuration files:
+super + Escape
+  pkill -USR1 -x sxhkd
+# for dmenu
+super + p
+  dmenu_run
+# restart wm
+super + Shift + r
+  bspc wm -r
+# quit/restart bspwm
+shift + super + {q,r}
+  bspc {quit,wm -r}
+# Launch google chrome
+super + b
+  google-chrome
+# Change workspace
+super + {1-9,0}
+  bspc desktop -f {I,II,III,IV,V,VI,VII,VIII,IX,X}
+# Change brightness
+XF86MonBrightnessUp
+  brightnessctl s 10+
+XF86MonBrightnessDown
+  brightnessctl s 10-
+# Changing the Volume
+XF86AudioRaiseVolume
+  pulsemixer --change-volume +10
+XF86AudioLowerVolume
+  pulsemixer --change-volume -10
+XF86AudioMute
+  pulsemixe --toggle-mute
+# close and kill
+super + q 
+  bspc node -{c,k}
+# Take a screenshot
+super + s
+  gnome-screenshot
+# send the window to the given desktop
+super + shift + {1-9}
+  bspc node -d '^{1-9}'
+# focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+  bspc node -{f,s} {west,south,north,east}
+# Open ranger
+super + f
+  alacritty -e ranger 
+# Swap current node with biggest
+super + g
+  bspc node -s biggest
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+  bspc node -p {west,south,north,east}
+
