@@ -15,4 +15,5 @@ This is a work in progress and will be updated often.
 - Rofi
 - Compton
 - Neo Vim
+- Ranger
 
