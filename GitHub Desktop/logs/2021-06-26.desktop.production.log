@@ -30,3 +30,6 @@
 Error: timed out
     at /home/odst0016/webpack:/app/src/lib/highlighter/worker.ts:85:14
 2021-06-26T07:35:34.652Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 1 repositories took 0.2s of which 0.0s paused, total 0.2s
+2021-06-26T07:39:45.918Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 1.812s)
+2021-06-26T07:39:49.576Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: bspwm - odst0016 (has token)
+2021-06-26T07:39:52.181Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.569s)
