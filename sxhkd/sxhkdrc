@@ -24,14 +24,14 @@ XF86MonBrightnessUp
   brightnessctl s 10+
 XF86MonBrightnessDown
   brightnessctl s 10-
-# Changing the Volume
+# Volume Management 
 XF86AudioRaiseVolume
   pulsemixer --change-volume +10
 XF86AudioLowerVolume
   pulsemixer --change-volume -10
 XF86AudioMute
   pulsemixe --toggle-mute
-# close and kill
+# Close and Kill all aplications related to highlighted node
 super + q 
   bspc node -{c,k}
 # Take a screenshot
@@ -49,13 +49,12 @@ super + f
 # Swap current node with biggest
 super + g
   bspc node -s biggest
-
 # preselect the direction
 super + ctrl + {h,j,k,l}
   bspc node -p {west,south,north,east}
-# launch log out
+# Launches rofi logout window
 ctrl + shift + l
   ~/.config/polybar/forest/scripts/powermenu.sh
-# application menu
+# Opens polybar application launcher
 super + space
   ~/.config/polybar/forest/scripts/launcher.sh
