@@ -1,17 +1,17 @@
 font:
         normal:
-                family: monospace
+                family: Monoid Nerd Font Mono 
                 style: regular
         bold:
-                family: monospace
+                family: Monoid Nerd Font Mono 
                 style: Bold
         italic:
-                family: monospace
+                family: Monoid Nerd Font Mono
                 style: Italic
         bold_italic:
-                family: monospace
+                family: Monoid Nerd Font Mono
                 style: Bold Italic
-        size: 8 
+        size: 7
 
 background_opacity: 0.7
 
